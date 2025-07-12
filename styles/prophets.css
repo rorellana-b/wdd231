@@ -1,0 +1,57 @@
+/******** SITE WIDE STYLES ********/
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+h1 {
+    margin: 1rem 10px;
+    text-align: center;
+}
+
+p,
+h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 10px;
+}
+
+.card {
+    padding-top: 1rem;
+    background-color: #ddd;
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card img {
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0 0 30px #777;
+    height: 300px;
+    border: 1px solid #111;
+    margin: 0 0 1rem 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
