@@ -29,5 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     loadSpotlight();
-    setInterval(loadSpotlight, 8000);
+    setInterval(loadSpotlight, 5000);
 }); 

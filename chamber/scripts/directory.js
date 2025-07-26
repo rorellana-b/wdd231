@@ -16,7 +16,6 @@ fetchBusinessData();
 
 const displayBusinesses = (businesses) => {
     businesses.forEach(business => {
-        // Create a section and add the class "card"
         const card = document.createElement('section');
         card.classList.add('card');
 
