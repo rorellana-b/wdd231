@@ -54,5 +54,4 @@ function displayResult(data) {
     sunriseTemp.innerHTML = `${sunriseTime}`;
     sunsetTemp.innerHTML = `${sunsetTime}`;
 
-    console.log('Hello')
 }
