@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="El Salvador - Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rorellana-b.github.io/wdd231/chamber/images/hands.svg" />
+    <meta property="og:url" content="https://rorellana-b.github.io/wdd231/chamber/directory.html" />
+    <meta name="description" content="Directory Page of bussines from El Salvador, Chamber of Commerce">
+    <meta name="author" content="Ronal Balmore Orellana Bonilla">
+    <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon_hands.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/form.js"></script>
+    <title>Chamber of Commerce Join us page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/hands.svg" alt="hands logo" class="logo" width="512" height="512">
+        <span>Chamber of Commerce - El Salvador</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thanks.html" class="wf1" method="get" autocomplete="on">
+            <h2>Membership Application</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name: <input type="text" name="username" id="username" autocomplete="given-name"
+                        required></label>
+                <label>Last Name: <input type="text" name="userlastname" id="userlastname" autocomplete="family-name"
+                        required></label>
+                <label>Organizational title: <input type="text" name="organization" id="organization"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required></label>
+                <label>Email: <input type="email" name="email" id="userEmail" autocomplete="email"
+                        title="Please enter a valid email address" required></label>
+                <label>Phone: <input type="tel" name="phone" id="userPhone" title="Please enter a Phone number"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Bussines name: <input type="text" name="businessName" id="businessName"
+                        autocomplete="organization" required></label>
+                <label>Select your membership:</label>
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="np" required>
+                    <span>NP Membership</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="bronze">
+                    <span>Bronze Membership</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="silver">
+                    <span>Silver Membership</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" name="membership" value="gold">
+                    <span>Gold Membership</span>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Subscribe">
+            </fieldset>
+        </form>
+        <div id="membership-container">
+            <h2>Membership Level</h2>
+            <div class="membership-level">
+                <h3>Non Profit Membership Level</h3>
+                <button class="bt_learn" data-level="Non Profit">Learn More</button>
+            </div>
+
+            <div class="membership-level">
+                <h3>Bronze Membership Level</h3>
+                <button class="bt_learn" data-level="Bronze">Learn More</button>
+            </div>
+
+            <div class="membership-level">
+                <h3>Silver Membership Level</h3>
+                <button class="bt_learn" data-level="Silver">Learn More</button>
+            </div>
+
+            <div class="membership-level">
+                <h3>Gold Membership Level</h3>
+                <button class="bt_learn" data-level="Gold">Learn More</button>
+            </div>
+        </div>
+        <!-- Modal Dialog -->
+        <dialog id="open-details"></dialog>
+    </main>
+    <footer>
+        <div>
+            <p>El Salvador Chamber of Commerce</p>
+            <p>Chalatenango</p>
+            <p>San Antonio Street 101</p>
+            <p>info@chamberes.com.sv</p>
+            <p>(503) 2300-4000</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://youtube.com" aria-label="YouTube"><img src="images/youtube.svg" alt="youtube icon"
+                    width="50" height="50"></a>
+            <a href="https://linkedin.com" aria-label="Likendin"><img src="images/linkedin.svg" alt="youtube icon"
+                    width="50" height="50"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p id="currentyear"></p>
+            <p id="lastModified">mmm</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -42,10 +42,5 @@ const displayProphets = (prophets) => {
         image.setAttribute("height", "340");
         image.setAttribute("loading", "lazy");
         card.appendChild(image);
-
-
-
-
-
     });
 }
