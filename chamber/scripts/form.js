@@ -62,7 +62,7 @@ const membershipInfo = {
     }
 };
 
-// Función para mostrar detalles
+// Funtion to show details
 function displayMembershipDetails(level) {
     const info = membershipInfo[level];
 
@@ -80,7 +80,7 @@ function displayMembershipDetails(level) {
     });
 }
 
-// Asignar evento a todos los botones Learn More
+// events fot learn more buttons
 document.querySelectorAll(".bt_learn").forEach(button => {
     button.addEventListener("click", () => {
         const level = button.getAttribute("data-level");

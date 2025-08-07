@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="El Salvador - Chamber of Commerce" />
     <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Join the Chamber of Commerce in El Salvador and be part of a community that supports local businesses and promotes economic growth." />
     <meta property="og:image" content="https://rorellana-b.github.io/wdd231/chamber/images/hands.svg" />
     <meta property="og:url" content="https://rorellana-b.github.io/wdd231/chamber/directory.html" />
     <meta name="description" content="Directory Page of bussines from El Salvador, Chamber of Commerce">
@@ -36,6 +38,7 @@
             <li class="current"><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
+    <h1>Join the Chamber of Commerce</h1>
     <main>
         <form action="thanks.html" class="wf1" method="get" autocomplete="on">
             <h2>Membership Application</h2>
@@ -57,25 +60,29 @@
                 <label>Bussines name: <input type="text" name="businessName" id="businessName"
                         autocomplete="organization" required></label>
                 <label>Select your membership:</label>
-                <label class="radio-label">
-                    <input type="radio" name="membership" value="np" required>
-                    <span>NP Membership</span>
-                </label>
+                <fieldset>
+                    <legend>Select your membership:</legend>
 
-                <label class="radio-label">
-                    <input type="radio" name="membership" value="bronze">
-                    <span>Bronze Membership</span>
-                </label>
+                    <label>
+                        <input type="radio" name="membership" value="np" required>
+                        NP Membership
+                    </label>
 
-                <label class="radio-label">
-                    <input type="radio" name="membership" value="silver">
-                    <span>Silver Membership</span>
-                </label>
+                    <label>
+                        <input type="radio" name="membership" value="bronze">
+                        Bronze Membership
+                    </label>
 
-                <label class="radio-label">
-                    <input type="radio" name="membership" value="gold">
-                    <span>Gold Membership</span>
-                </label>
+                    <label>
+                        <input type="radio" name="membership" value="silver">
+                        Silver Membership
+                    </label>
+
+                    <label>
+                        <input type="radio" name="membership" value="gold">
+                        Gold Membership
+                    </label>
+                </fieldset>
                 <input type="hidden" name="timestamp" id="timestamp">
                 <input type="submit" value="Subscribe">
             </fieldset>
