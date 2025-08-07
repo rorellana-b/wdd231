@@ -67,5 +67,20 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .discover-cards {
+
+        grid-template-areas:
+            "figure name"
+            "figure address"
+            "figure description"
+            "figure button"
+        ;
+    }
+
+    .discover-cards figure {
+        width: 200px;
+        height: 120px;
+    }
+
 
 }

@@ -426,3 +426,60 @@ dialog button {
     padding: .5rem 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
 }
+
+/*********** DISCOVER *********/
+.discover-cards {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "figure"
+        "address"
+        "description"
+        "button"
+
+    ;
+}
+
+.discover-cards h2 {
+    grid-area: name;
+}
+
+.discover-cards figure {
+    grid-area: figure;
+}
+
+.discover-cards address {
+    grid-area: address;
+}
+
+.discover-cards p {
+    grid-area: description;
+}
+
+.discover-cards figure img {
+    grid-area: figure;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discover-cards button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.discover-cards button:hover {
+    background-color: #0056b3;
+}
