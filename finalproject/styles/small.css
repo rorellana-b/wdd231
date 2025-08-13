@@ -1,6 +1,6 @@
 :root {
     --primary-color: #D62828;
-    --secondary-color: #FCBF49;
+    --secondary-color: #a42222;
     --accent1-color: #003049;
     --accent2-color: #e1e1e1;
 
@@ -81,14 +81,18 @@ header h1 {
     transition: color 0.3s ease;
 }
 
-.navigation li:hover {
-    background-color: var(--nav-hover-background-color);
+.navigation .current a {
+    color: var(--secondary-color);
 }
 
-.navigation a:hover,
-.navigation .current a {
-    color: var(--primary-color);
+
+.navigation li:hover,
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
+
+
 
 /******** HAMBURGER STYLE ********/
 .hamburger {
@@ -132,6 +136,7 @@ footer .social a {
 footer .social a img {
     width: 35px;
     height: 35px;
+    color: white;
     filter: brightness(85%);
     vertical-align: middle;
 }
