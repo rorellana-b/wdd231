@@ -1,0 +1,124 @@
+@media only screen and (min-width:38rem) {
+
+    header,
+    main,
+    nav,
+    footer,
+    #hero-container,
+    h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 5px;
+        margin-top: 50px;
+
+        text-align: center;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+
+    }
+
+    header h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    footer {
+        padding: 1.5rem 2rem;
+        font-size: 1rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .social {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        font-size: 1.3rem;
+    }
+
+
+    /* hero image */
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        padding: 4rem 5%;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-img {
+        flex: 1;
+        width: 70%;
+        max-height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .recipe-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    body {
+        padding: 2rem 4rem;
+    }
+
+    .recipe-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #testimonials .testimonial-cards {
+        flex-direction: row;
+    }
+
+    #testimonials blockquote {
+        flex: 1;
+    }
+
+    .wf1 input[type="submit"] {
+        margin: 0;
+        padding: .6rem;
+        text-align: center;
+        width: 96%;
+        max-width: 400px;
+        margin: .9rem 2% .9rem 2%;
+        box-shadow: 1px 1px 4px var(--border);
+    }
+
+    
+
+}
